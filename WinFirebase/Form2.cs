@@ -54,7 +54,8 @@ namespace WinFirebase
         }
 
         private void Form2_Load(object sender, EventArgs e)
-        {        
+        {
+            
         }
 
         private ValidationResult Validation()
@@ -65,6 +66,6 @@ namespace WinFirebase
                 validationResult.Messages.Add("Digite o nome completo");
             }
             return validationResult;
-        }        
+        }
     }
 }

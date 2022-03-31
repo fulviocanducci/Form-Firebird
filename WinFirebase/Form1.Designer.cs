@@ -119,6 +119,7 @@ namespace WinFirebase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.BtnEnd;
             this.ClientSize = new System.Drawing.Size(639, 379);
             this.Controls.Add(this.BtnEnd);
             this.Controls.Add(this.BtnNew);
