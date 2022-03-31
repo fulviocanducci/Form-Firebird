@@ -67,5 +67,10 @@ namespace WinFirebase
             }
             return validationResult;
         }
+
+        private void Form2_Activated(object sender, EventArgs e)
+        {
+            TxtName.Focus();
+        }
     }
 }

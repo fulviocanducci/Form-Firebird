@@ -71,12 +71,25 @@ namespace WinFirebase
         {
             if (e.RowIndex >= 0)
             {
-                object value = dataGridView1.Rows[e.RowIndex].Cells[0].Value;
-                if (value != null && int.TryParse(value.ToString(), out int id))
-                {
-                    People people = DatabaseContext.People.Get(x => x.Id == id);
-                    InsertOrUpdate(people);
-                }
+                DataGridView1Show(e.RowIndex);
+            }
+        }
+
+        private void dataGridView1_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
+        {
+            if (e != null && e.KeyCode == Keys.Enter)
+            {
+                DataGridView1Show(dataGridView1.CurrentRow.Index);
+            }
+        }
+
+        private void DataGridView1Show(int rowIndex)
+        {
+            object value = dataGridView1.Rows[rowIndex].Cells[0].Value;
+            if (value != null && int.TryParse(value.ToString(), out int id))
+            {
+                People people = DatabaseContext.People.Get(x => x.Id == id);
+                InsertOrUpdate(people);
             }
         }
     }
