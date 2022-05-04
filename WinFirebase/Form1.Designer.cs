@@ -46,12 +46,13 @@ namespace WinFirebase
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AllowUserToResizeColumns = false;
             this.dataGridView1.AllowUserToResizeRows = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.PId,
             this.PName,
             this.PActive});
-            this.dataGridView1.Location = new System.Drawing.Point(10, 12);
+            this.dataGridView1.Location = new System.Drawing.Point(11, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -65,7 +66,7 @@ namespace WinFirebase
             this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(617, 326);
+            this.dataGridView1.Size = new System.Drawing.Size(612, 326);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             this.dataGridView1.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.dataGridView1_PreviewKeyDown);
@@ -108,7 +109,7 @@ namespace WinFirebase
             // 
             // BtnEnd
             // 
-            this.BtnEnd.Location = new System.Drawing.Point(552, 344);
+            this.BtnEnd.Location = new System.Drawing.Point(548, 344);
             this.BtnEnd.Name = "BtnEnd";
             this.BtnEnd.Size = new System.Drawing.Size(75, 23);
             this.BtnEnd.TabIndex = 4;
@@ -121,7 +122,7 @@ namespace WinFirebase
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.BtnEnd;
-            this.ClientSize = new System.Drawing.Size(639, 379);
+            this.ClientSize = new System.Drawing.Size(630, 372);
             this.Controls.Add(this.BtnEnd);
             this.Controls.Add(this.BtnNew);
             this.Controls.Add(this.dataGridView1);
